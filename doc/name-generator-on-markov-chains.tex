@@ -1,0 +1,67 @@
+\documentclass{beamer}
+\usetheme{Frankfurt}
+
+\usepackage[main=russian,english]{babel}
+\usepackage{fontspec}
+
+\defaultfontfeatures{Ligatures={TeX},Renderer=Basic}
+\setmainfont[Ligatures={TeX,Historic}]{Times New Roman}
+\setsansfont{CMU Serif}
+\setmonofont{Ubuntu Mono}
+\usepackage[fontsize=14pt]{scrextend}
+
+% \usepackage[T2A]{fontenc}
+% \usepackage[utf8]{inputenc}
+% \usepackage[russian,english]{babel}
+%
+% \usepackage{paratype} % I think it doesn't work as it should
+
+
+\title
+{Генератор русских имен}
+
+\subtitle
+{Генерирование имен цепями Маркова}
+
+\author
+{Николай Неупокоев\\Бесполезный видеоблог\\\url{youtube.com/channel/UC7JDwFPt-Wu_rMB4-g-ePug}}
+
+\date
+{Выпуск 1}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Формулы}
+\[
+P(l_i \to l_j)\qquad
+\textsf{для всех }i,j \in \{1, \ldots, 33\}
+\]
+
+\[
+\sum_{j=1}^{33} P(l_i \to l_j)=1
+\]
+\end{frame}
+
+\begin{frame}{Формулы}
+\[
+H(l_i \to l_j) \geqslant 0
+\]
+
+\[
+P(l_i \to l_j) = \frac{H(l_i \to l_j)}{H_i} = \frac{H_{ij}}{H_i}
+\]
+
+\[
+H_i = \sum_j H_{ij}
+\]
+\end{frame}
+
+
+
+
+\end{document}
