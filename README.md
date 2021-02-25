@@ -4,7 +4,7 @@
 ## Run
 
 ```
-python src/probabilities.py
+python generate.py
 ```
 
 
